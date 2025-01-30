@@ -10,8 +10,11 @@
 
     <packaging>pom</packaging>
     <modules>
-        <module>app</module>
+
+        <!-- prod -->
+<!--        <module>task-tracker</module>-->
         <module>authorization</module>
+
     </modules>
 
 </project>

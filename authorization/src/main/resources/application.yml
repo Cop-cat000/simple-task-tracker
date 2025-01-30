@@ -1,0 +1,14 @@
+spring:
+  application.name: simple-task-tracker-authorization-server
+
+  # Database props
+  datasource:
+    url: jdbc:postgresql://postgres:5432/authorization_db
+    username: authorization
+    password: authorization
+  jpa:
+    show-sql: true
+
+  flyway.enabled: true
+
+server.port: 8080

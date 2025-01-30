@@ -1,4 +1,4 @@
-package ruslan.simple_task_tracker_authorization_server.persistence.entities;
+package ruslan.authorization.persistence.entities;
 
 public enum Roles {
     ROOT {
