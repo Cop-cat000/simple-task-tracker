@@ -12,7 +12,7 @@ public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(name = "client_id", unique = true)
     private String clientId;
@@ -28,4 +28,5 @@ public class Client {
 
     @Column(name = "redirect_uri")
     private String redirectUri;
+
 }

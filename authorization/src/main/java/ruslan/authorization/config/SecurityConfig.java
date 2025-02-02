@@ -106,7 +106,7 @@ public class SecurityConfig {
 
     // Mocks
 
-    @Bean
+    /*@Bean
     public UserDetailsService mockUserDetailsService() {
         var u1 = User.withUsername("bill")
                 .password(passwordEncoder().encode("12345"))
@@ -131,5 +131,5 @@ public class SecurityConfig {
                 .build();
 
         return new InMemoryRegisteredClientRepository(r1);
-    }
+    }*/
 }
