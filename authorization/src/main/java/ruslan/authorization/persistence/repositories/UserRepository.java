@@ -1,10 +1,15 @@
 package ruslan.authorization.persistence.repositories;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import ruslan.authorization.persistence.entities.User;
 
 import java.util.Optional;
 
-public interface UserRepository {
+public interface UserRepository extends JpaRepository<User, Long> {
 
-    Optional<User> getUser(String id);
+    @Query("""
+            SELECT u FROM User u WHERE u.username = :username
+            """)
+    Optional<User> findByUsername(String username);
 }
