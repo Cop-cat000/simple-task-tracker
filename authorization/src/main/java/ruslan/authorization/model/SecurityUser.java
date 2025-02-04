@@ -3,7 +3,7 @@ package ruslan.authorization.model;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import ruslan.authorization.persistence.entities.User;
+import ruslan.common.persistence.entities.User;
 
 import java.util.Collection;
 import java.util.List;

@@ -1,4 +1,4 @@
-package ruslan.authorization.persistence.entities;
+package ruslan.common.persistence.entities;
 
 public enum Roles {
     ROOT {

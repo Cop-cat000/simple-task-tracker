@@ -4,9 +4,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClient;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import ruslan.authorization.model.SecurityClient;
-import ruslan.authorization.persistence.entities.Client;
+import ruslan.common.persistence.entities.Client;
+import ruslan.common.persistence.repositories.ClientRepository;
 
 @Repository
 @RequiredArgsConstructor
@@ -14,7 +14,6 @@ public class RegisteredJpaClientRepository implements RegisteredClientRepository
 
     private final ClientRepository clientRepository;
 
-    @Transactional
     @Override
     public void save(RegisteredClient registeredClient) {
         SecurityClient securityClient = new SecurityClient(registeredClient);

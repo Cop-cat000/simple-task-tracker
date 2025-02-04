@@ -2,34 +2,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>ruslan</groupId>
-		<artifactId>microservice</artifactId>
+		<artifactId>common</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../common/parent_pom/services/pom.xml</relativePath>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>user-client-service</artifactId>
+	<groupId>ruslan.common</groupId>
+	<artifactId>persistence</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>user-client-service</name>
+	<packaging>jar</packaging>
+	<name>persistence</name>
 
 	<dependencies>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>ruslan.common</groupId>
-			<artifactId>resource-server-config</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-			<groupId>ruslan.common</groupId>
-			<artifactId>persistence</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 
 		<!-- TEST -->

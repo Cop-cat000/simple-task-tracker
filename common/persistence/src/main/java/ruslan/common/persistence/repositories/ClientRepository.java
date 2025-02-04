@@ -1,8 +1,8 @@
-package ruslan.authorization.persistence.repositories;
+package ruslan.common.persistence.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import ruslan.authorization.persistence.entities.Client;
+import ruslan.common.persistence.entities.Client;
 
 import java.util.Optional;
 

@@ -9,11 +9,13 @@
     <name>simple-task-tracker</name>
 
     <packaging>pom</packaging>
+
     <modules>
 
         <!-- prod -->
-<!--        <module>task-tracker</module>-->
+        <module>common</module>
         <module>authorization</module>
+        <module>user-client-service</module>
 
     </modules>
 

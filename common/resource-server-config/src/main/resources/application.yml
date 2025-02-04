@@ -1,0 +1,4 @@
+spring:
+  application.name: persistence
+
+jwksUri: http://authorization:8080/oauth2/jwks

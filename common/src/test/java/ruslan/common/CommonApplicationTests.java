@@ -1,10 +1,10 @@
-package ruslan.user_client_service;
+package ruslan.common;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserClientServiceApplicationTests {
+class CommonApplicationTests {
 
 //	@Test
 //	void contextLoads() {

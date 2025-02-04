@@ -5,8 +5,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
 import ruslan.authorization.model.SecurityUser;
-import ruslan.authorization.persistence.repositories.UserRepository;
+import ruslan.common.persistence.repositories.UserRepository;
 
 @Service
 @RequiredArgsConstructor

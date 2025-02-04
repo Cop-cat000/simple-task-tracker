@@ -1,10 +1,10 @@
-package ruslan.user_client_service;
+package ruslan.common.resource_server_config;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserClientServiceApplicationTests {
+class ResourceServerConfigApplicationTests {
 
 //	@Test
 //	void contextLoads() {
