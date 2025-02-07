@@ -11,7 +11,6 @@ public class JwtAuthenticationTokenConverter implements Converter<Jwt, JwtAuthen
 
     @Override
     public JwtAuthenticationToken convert(Jwt source) {
-        System.out.println("CONVERTING");
         String role = (String) source.getClaims().get("role");
         JwtAuthenticationToken authenticationObj =
                 new JwtAuthenticationToken(source, List.of(new SimpleGrantedAuthority(role)));

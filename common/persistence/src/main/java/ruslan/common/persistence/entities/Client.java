@@ -33,7 +33,4 @@ public class Client {
 
     @Column(name = "redirect_uri", nullable = false)
     private String redirectUri;
-
-    @ManyToMany(mappedBy = "clients")
-    private List<User> users;
 }

@@ -28,13 +28,3 @@ CREATE TABLE "clients" (
 
 INSERT INTO clients ("client_id", "secret", "scope", "auth_method", "grant_type", "redirect_uri")
 VALUES ('client', '$2a$10$Npm0AEhLPLSc1N1LW/aFTew/APjjYFTQWZvmNTPW4irnZFlRzgkK6', 'openid', 'client_secret_basic', 'authorization_code', 'https://springone.io/authorized');
-
--- users_clients
-CREATE TABLE "users_clients" (
-  "user_id" bigint NOT NULL,
-  "client_id" bigint NOT NULL
-);
-
-ALTER TABLE "users_clients" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
-
-ALTER TABLE "users_clients" ADD FOREIGN KEY ("client_id") REFERENCES "clients" ("id");
