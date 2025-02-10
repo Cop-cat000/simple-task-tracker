@@ -51,6 +51,16 @@ public class UserService {
                 .orElseThrow(UserNotFoundException::new));
     }
 
+    public UserDto getByUsername(String username) {
+        return new UserDto(userRepository.findByUsername(username)
+                .orElseThrow(UserNotFoundException::new));
+    }
+
+    public UserDto getByEmail(String email) {
+        return new UserDto(userRepository.findByEmail(email)
+                .orElseThrow(UserNotFoundException::new));
+    }
+
     public List<UserDto> getAllById(List<Long> ids) {
         return userRepository.findAllById(ids).stream()
                 .map(UserDto::new)
@@ -58,8 +68,20 @@ public class UserService {
     }
 
 
+    public List<UserDto> getAllByUsername(List<String> usernames) {
+        return userRepository.findAllByUsername(usernames).stream()
+                .map(UserDto::new)
+                .toList();
+    }
+
+    public List<UserDto> getAllByEmail(List<String> emails) {
+        return userRepository.findAllByEmail(emails).stream()
+                .map(UserDto::new)
+                .toList();
+    }
+
     @Transactional
-    public void updateUser(long id, UserUpdationDto updationDto) {
+    public UserDto updateUser(long id, UserUpdationDto updationDto) {
         User user = userRepository.findById(id)
                 .orElseThrow(UserNotFoundException::new);
 
@@ -68,6 +90,22 @@ public class UserService {
         if(updationDto.password() != null) user.setPassword(
                 passwordEncoder.encode(updationDto.password())
         );
+
+        return new UserDto(user);
+    }
+
+    @Transactional
+    public UserDto updateUser(String username, UserUpdationDto updationDto) {
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(UserNotFoundException::new);
+
+        if(updationDto.username() != null) user.setUsername(updationDto.username());
+        if(updationDto.email() != null) user.setEmail(updationDto.email());
+        if(updationDto.password() != null) user.setPassword(
+                passwordEncoder.encode(updationDto.password())
+        );
+
+        return new UserDto(user);
     }
 
     @Transactional

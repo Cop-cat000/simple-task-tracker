@@ -1,7 +1,7 @@
 -- roles
-CREATE TYPE roles
-AS
-ENUM('ROOT','ADMIN','USER');
+--CREATE TYPE roles
+--AS
+--ENUM('ROOT','ADMIN','USER');
 
 -- users
 CREATE TABLE "users" (
@@ -9,7 +9,7 @@ CREATE TABLE "users" (
   "username" varchar(50) UNIQUE NOT NULL,
   "email" varchar(50) UNIQUE NOT NULL,
   "password" varchar(72) NOT NULL,
-  "role" roles NOT NULL
+  "role" varchar(10) NOT NULL
 );
 
 INSERT INTO "users" ("username", "email", "password", "role")
