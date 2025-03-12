@@ -5,61 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1cf02e0-5a1c-401c-aa0d-142015a1eec6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/parent_pom/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/parent_pom/services/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/persistence/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/persistence/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/persistence/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/persistence/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/persistence/src/main/java/ruslan/common/persistence/PersistenceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/persistence/src/main/java/ruslan/common/persistence/exceptions/ClientNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/persistence/src/test/java/ruslan/common/persistence/PersistenceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/src/main/java/ruslan/common/resource_server_config/JwtAuthenticationTokenConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/src/main/java/ruslan/common/resource_server_config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/src/main/java/ruslan/common/resource_server_config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/resource-server-config/src/test/java/ruslan/common/resource_server_config/ResourceServerConfigApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/test/java/ruslan/common/CommonApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-task-tracker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-task-tracker.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-task-tracker.iws" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-client-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/controllers/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-client-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/Authorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/Authorization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/model/SecurityClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/model/SecurityClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/ruslan/user_service/services/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/model/SecurityUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/model/SecurityUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/persistence/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/persistence/src/main/java/ruslan/common/persistence/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/persistence/entities/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/persistence/src/main/java/ruslan/common/persistence/entities/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/persistence/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/persistence/src/main/java/ruslan/common/persistence/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/persistence/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/persistence/src/main/java/ruslan/common/persistence/repositories/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/persistence/repositories/JpaClientRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/persistence/repositories/JpaUserRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/persistence/repositories/RegisteredJpaClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/persistence/repositories/RegisteredJpaClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/persistence/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/persistence/src/main/java/ruslan/common/persistence/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/services/JpaUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/main/java/ruslan/authorization/services/JpaUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization/src/test/java/ruslan/authorization/JpaUserDetailsServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/src/test/java/ruslan/authorization/JpaUserDetailsServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/persistence/src/main/java/ruslan/common/persistence/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/persistence/src/main/java/ruslan/common/persistence/entities/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-tracker/src/main/java/ruslan/simple_task_tracker/config/ProjectConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-client-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-client-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/UserClientServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/UserClientServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-task-tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/simple-task-tracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-task-tracker.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/simple-task-tracker.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-task-tracker.iws" beforeDir="false" afterPath="$PROJECT_DIR$/simple-task-tracker.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-tracker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/task-tracker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-tracker/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task-tracker/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/UserClientServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ruslan/user_service/UserClientServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/config/UserClientSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ruslan/user_service/config/UserClientSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/controllers/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ruslan/user_service/controllers/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ruslan/user_service/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/dto/user/UserCreationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ruslan/user_service/dto/user/UserCreationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/dto/user/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ruslan/user_service/dto/user/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/dto/user/UserUpdationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ruslan/user_service/dto/user/UserUpdationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/services/ClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/services/RoleValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ruslan/user_service/services/RoleValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/java/ruslan/user_client_service/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ruslan/user_service/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-client-service/src/test/java/ruslan/user_client_service/UserClientServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/ruslan/user_service/UserClientServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,6 +207,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Exception" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -299,23 +278,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/Ruslan/programming/simple-task-tracker/common/persistence",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.JpaUserDetailsServiceTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserClientServiceApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/Ruslan/programming/simple-task-tracker/user-service/src&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user-service/src" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/common/persistence" />
       <recent name="$PROJECT_DIR$/common/parent_pom/services" />
       <recent name="$PROJECT_DIR$/common/parent_pom" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user-service" />
     </key>
   </component>
   <component name="RunManager">
@@ -335,6 +323,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JpaUserDetailsServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="authorization" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ruslan.authorization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ruslan.authorization" />
+      <option name="MAIN_CLASS_NAME" value="ruslan.authorization.JpaUserDetailsServiceTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -346,6 +354,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JpaUserDetailsServiceTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StarteamConfiguration">

@@ -1,5 +1,5 @@
 spring:
-  application.name: user-client-service
+  application.name: user-service
 
   # Database props
   datasource:

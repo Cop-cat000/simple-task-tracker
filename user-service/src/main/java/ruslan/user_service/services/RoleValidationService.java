@@ -1,10 +1,10 @@
-package ruslan.user_client_service.services;
+package ruslan.user_service.services;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import ruslan.common.persistence.entities.Roles;
-import ruslan.user_client_service.dto.user.UserDto;
+import ruslan.user_service.dto.user.UserDto;
 
 @Service
 @RequiredArgsConstructor
@@ -19,5 +19,10 @@ public class RoleValidationService {
 
         UserDto user = userService.getById(userId);
         return user.role().equals(Roles.USER);
+    }
+
+    private String getRole() {
+        return SecurityContextHolder.getContext().getAuthentication().getAuthorities()
+                .stream().findAny().get().toString();
     }
 }

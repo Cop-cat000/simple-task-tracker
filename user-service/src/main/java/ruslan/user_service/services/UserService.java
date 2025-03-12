@@ -1,4 +1,4 @@
-package ruslan.user_client_service.services;
+package ruslan.user_service.services;
 
 import lombok.RequiredArgsConstructor;
 
@@ -9,9 +9,9 @@ import org.springframework.transaction.annotation.Transactional;
 import ruslan.common.persistence.entities.User;
 import ruslan.common.persistence.exceptions.UserNotFoundException;
 import ruslan.common.persistence.repositories.UserRepository;
-import ruslan.user_client_service.dto.user.UserCreationDto;
-import ruslan.user_client_service.dto.user.UserDto;
-import ruslan.user_client_service.dto.user.UserUpdationDto;
+import ruslan.user_service.dto.user.UserCreationDto;
+import ruslan.user_service.dto.user.UserDto;
+import ruslan.user_service.dto.user.UserUpdationDto;
 
 import java.util.List;
 import java.util.Optional;

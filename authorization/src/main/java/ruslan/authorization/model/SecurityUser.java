@@ -7,6 +7,7 @@ import ruslan.common.persistence.entities.User;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 
 public class SecurityUser implements UserDetails {
 
@@ -29,5 +30,17 @@ public class SecurityUser implements UserDetails {
     @Override
     public String getUsername() {
         return user.getUsername();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        SecurityUser that = (SecurityUser) o;
+        return Objects.equals(user, that.user);
+    }
+
+    @Override
+    public int hashCode() {
+        return user.hashCode();
     }
 }

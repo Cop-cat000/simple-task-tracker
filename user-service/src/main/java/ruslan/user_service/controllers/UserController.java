@@ -1,4 +1,4 @@
-package ruslan.user_client_service.controllers;
+package ruslan.user_service.controllers;
 
 import jakarta.validation.Valid;
 
@@ -9,10 +9,10 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
-import ruslan.user_client_service.dto.user.UserCreationDto;
-import ruslan.user_client_service.dto.user.UserDto;
-import ruslan.user_client_service.dto.user.UserUpdationDto;
-import ruslan.user_client_service.services.UserService;
+import ruslan.user_service.dto.user.UserCreationDto;
+import ruslan.user_service.dto.user.UserDto;
+import ruslan.user_service.dto.user.UserUpdationDto;
+import ruslan.user_service.services.UserService;
 
 import java.util.List;
 

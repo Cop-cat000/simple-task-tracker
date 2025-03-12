@@ -1,4 +1,4 @@
-package ruslan.user_client_service.controllers;
+package ruslan.user_service.controllers;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;

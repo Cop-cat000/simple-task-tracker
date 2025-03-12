@@ -1,4 +1,4 @@
-package ruslan.user_client_service.config;
+package ruslan.user_service.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

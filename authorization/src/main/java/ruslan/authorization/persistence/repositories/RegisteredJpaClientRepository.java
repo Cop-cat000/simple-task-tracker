@@ -1,9 +1,11 @@
 package ruslan.authorization.persistence.repositories;
 
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClient;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository;
 import org.springframework.stereotype.Repository;
+
 import ruslan.authorization.model.SecurityClient;
 import ruslan.common.persistence.entities.Client;
 import ruslan.common.persistence.repositories.ClientRepository;

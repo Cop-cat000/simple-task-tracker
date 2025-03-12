@@ -1,13 +1,17 @@
-package ruslan.user_client_service.dto.user;
+package ruslan.user_service.dto.user;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import ruslan.common.persistence.entities.Roles;
 
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserCreationDto {
 
     @NotNull
